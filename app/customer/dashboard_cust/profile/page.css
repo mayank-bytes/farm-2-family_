@@ -1,0 +1,402 @@
+.profile-container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 40px;
+    background: #f5f8f2;
+    display: flex;
+    justify-content: center;
+}
+
+
+.profile-wrapper {
+    width: 90%;
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+
+/* =========================
+        LEFT PROFILE CARD
+========================= */
+
+.profile-left {
+    flex: 2.5;
+}
+
+
+.profile-card {
+
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+
+.profile-card.editing {
+    border: 2px solid #4CAF50;
+}
+
+
+/* Edit Banner */
+
+.edit-banner {
+
+    background: #e8f5e9;
+    color:#2e7d32;
+    padding:15px;
+    font-weight:600;
+    text-align:center;
+}
+
+
+
+/* Header */
+
+.profile-header {
+
+    background: linear-gradient(
+        135deg,
+        #4CAF50,
+        #81C784
+    );
+
+    padding:35px;
+    text-align:center;
+    color:white;
+}
+
+
+.profile-avatar {
+
+    width:90px;
+    height:90px;
+    margin:auto;
+    background:white;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+
+
+.profile-name {
+
+    width:60%;
+    text-align:center;
+    font-size:26px;
+    font-weight:700;
+
+    border:none;
+    outline:none;
+
+    background:transparent;
+    color:white;
+}
+
+
+.profile-name:disabled {
+    cursor:default;
+}
+
+
+
+.profile-header p {
+
+    margin-top:10px;
+    font-size:15px;
+}
+
+
+
+/* Body */
+
+
+.profile-body {
+
+    padding:30px;
+}
+
+
+
+.profile-info {
+
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+}
+
+
+
+.info-box {
+
+    background:#f8faf7;
+    padding:18px;
+    border-radius:12px;
+    border-left:5px solid #4CAF50;
+}
+
+
+
+.info-title {
+
+    font-size:14px;
+    color:#777;
+    margin-bottom:8px;
+}
+
+
+.info-value {
+
+    font-size:17px;
+    font-weight:600;
+}
+
+
+
+.profile-input {
+
+    width:100%;
+    border:none;
+    outline:none;
+
+    font-size:16px;
+    background:transparent;
+}
+
+
+.profile-input:disabled {
+
+    cursor:not-allowed;
+}
+
+
+
+
+/* Footer Buttons */
+
+
+.profile-footer {
+
+    margin-top:30px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+
+
+.edit-btn,
+.save-btn,
+.cancel-btn {
+
+    padding:12px 30px;
+    border:none;
+    border-radius:25px;
+    cursor:pointer;
+    font-weight:600;
+    font-size:15px;
+}
+
+
+.edit-btn {
+
+    background:#4CAF50;
+    color:white;
+}
+
+
+.save-btn {
+
+    background:#2e7d32;
+    color:white;
+}
+
+
+.cancel-btn {
+
+    background:#ef5350;
+    color:white;
+}
+
+
+
+
+.quote {
+
+    margin-top:30px;
+    padding:20px;
+    background:#f1f8e9;
+
+    border-radius:15px;
+    text-align:center;
+
+    color:#558b2f;
+}
+
+
+
+/* =========================
+       RIGHT MEMBERSHIP
+========================= */
+
+
+.profile-right {
+
+    flex:1;
+}
+
+
+.membership-card {
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.10);
+
+}
+
+
+
+.membership-card h2 {
+
+    text-align:center;
+
+    color:#388e3c;
+
+    font-size:22px;
+
+    margin-bottom:20px;
+}
+
+
+
+.member-item {
+
+    display:flex;
+    justify-content:space-between;
+
+    padding:12px 0;
+
+    border-bottom:1px solid #eee;
+
+    font-size:14px;
+}
+
+
+.member-item span {
+
+    color:#777;
+
+}
+
+
+.member-item strong {
+
+    color:#333;
+
+}
+
+
+
+.active-status {
+
+    color:#2e7d32 !important;
+}
+
+
+.inactive-status {
+
+    color:#d32f2f !important;
+}
+
+
+
+
+.member-desc {
+
+    margin-top:20px;
+
+    padding:15px;
+
+    background:#f8f9f5;
+
+    border-radius:12px;
+
+    font-size:14px;
+
+    color:#666;
+
+    text-align:center;
+
+}
+
+
+
+.buy-plan-btn {
+
+    width:100%;
+
+    margin-top:20px;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:25px;
+
+    background:#4CAF50;
+
+    color:white;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+}
+
+
+
+
+
+/* =========================
+        RESPONSIVE
+========================= */
+
+
+@media(max-width:900px){
+
+
+.profile-wrapper{
+
+    flex-direction:column;
+
+    width:95%;
+
+}
+
+
+.profile-left,
+.profile-right{
+
+    width:100%;
+
+}
+
+
+.profile-info{
+
+    grid-template-columns:1fr;
+
+}
+
+
+}
